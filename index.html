@@ -10,6 +10,7 @@
 	<script src="system/chartPie.js"></script>
 	<script src="system/chartDoughnut.js"></script>
 	<script src="system/chartPolarArea.js"></script>
+	<script src="web/tab.js"></script>
 	<link rel="icon" href="web/images/logo.png">
 	<title>Chart Me</title>	
 </head>
@@ -205,21 +206,4 @@
 	<p><a href="https://github.com/JayedRafiProjects/chart-me"><img src="web/images/GitHub-Mark-Light-32px.png" alt="github"><br/>GitHub repository</a></p>
 	</div>
 </body>
-
-<script>
-function tab(evt, name) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(name).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-</script>
-
 </html>
