@@ -9,6 +9,7 @@
 	<script src="system/chartScatter.js"></script>
 	<script src="system/chartPie.js"></script>
 	<script src="system/chartDoughnut.js"></script>
+	<script src="system/chartPolarArea.js"></script>
 	<link rel="icon" href="web/images/logo.png">
 	<title>Chart Me</title>	
 </head>
@@ -59,7 +60,7 @@
   <button class="tablinks" onclick="openCity(event, 'bar')">Bar</button>
   <button class="tablinks" onclick="openCity(event, 'doughnut')">Doughnut</button>
   <button class="tablinks" onclick="openCity(event, 'pie')">Pie</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Polar area</button>
+  <button class="tablinks" onclick="openCity(event, 'polar')">Polar area</button>
   <button class="tablinks" onclick="openCity(event, 'scatter')">Scatter</button>
   <button class="tablinks" onclick="openCity(event, 'dvs')">DVS (Java)</button>
 </div>
@@ -167,8 +168,25 @@
 	</div>
 </div>
 		
-<div id="Paris" class="tabcontent">
-  <h3>mewmew</h3>
+<div id="polar" class="tabcontent">
+  <div class="row" align="center">
+	<div class="column_1" align="center">
+		<button class="view_chart" onclick="processP()">View chart</button>
+		<button class="view_chart" onclick="refreshP()">Refresh index</button>
+		<form onsubmit="return inputPointsP()">
+  		<input type="text" id="x-axis-p" placeholder="name">
+  		<input type="text" id="y-axis-p" placeholder="val">
+  		<input type="submit" value="Submit" >
+  		</form>
+		<p>Instructions</p>
+		<p align="left">View chart: Makes the pie chart based on inserted data.</p>
+		<p align="left">Refresh index: Clears your screen.</p>
+		<p align="left">Initially I created 20 random colours. If you need more, go and add!</p>
+	</div>
+	<div class="column_2" align="center">
+		<canvas id="polar-chart" style="height:100%; width: 100%"></canvas>
+	</div>
+	</div>
 </div>
 <div id="dvs" class="tabcontent">
  <h3 align="center">Data Visualization Software</h3>
