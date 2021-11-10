@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="web/main.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-	<script src="system/chartMeLine.js"></script>
+	<script src="system/chartLine.js"></script>
 	<link rel="icon" href="web/images/logo.png">
 	<title>Chart Me</title>	
 </head>
@@ -63,7 +63,7 @@
   <button class="tablinks" onclick="openCity(event, 'Tokyo')">Bubble</button>
   <button class="tablinks" onclick="openCity(event, 'Tokyo')">Scatter</button>
   <button class="tablinks" onclick="openCity(event, 'Tokyo')">Area</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">DVS (Java)</button>
+  <button class="tablinks" onclick="openCity(event, 'dvs')">DVS (Java)</button>
 </div>
 		
 <div id="line" class="tabcontent">
@@ -83,7 +83,7 @@
 		<p align="left">In x-axis you can use custom name and in y-axis use values.</p>
 	</div>
 	<div class="column_2" align="center">
-		<canvas id="line-chart" style="height:100%;"></canvas>
+		<canvas id="line-chart" style="height:100%; width: 100%"></canvas>
 	</div>
 	</div>
 </div>
@@ -92,8 +92,9 @@
   <h3>mewmew</h3>
 </div>
 		
-<div id="Tokyo" class="tabcontent">
- <h3>mewmew</h3>
+<div id="dvs" class="tabcontent">
+ <h3 align="center">Data Visualization Software</h3>
+ <p>This is a different visualization tool </p>
 </div>
 
 	</div></div>
