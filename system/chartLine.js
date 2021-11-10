@@ -1,12 +1,15 @@
 /*******************************
- * 
  * Project: Chart Me
+ *
+ * Purpose: Line chart
  * Language: JavaScript
  * Date: November 2021
  * 
  * Dev: Jayed Rafi
  *
 *******************************/
+
+//Global variables
 var xAxis = []; //initially empty x axis
 var yAxis = []; //initially empty y axis
 
@@ -24,31 +27,30 @@ function inputPoints() {
 
 /*******************************
 * Makes the cart visible
-* Draws the chart based on xAxis & yAxis
+* Draws the chart based on xAxis (label) & yAxis
 *******************************/
 function process(){
- var chart = new Chart("line-chart", {
+new Chart("line-chart",{
   type: "line",
   data: {
     labels: xAxis,
     datasets: [{
       fill: false,
       lineTension: 0,
-      borderColor: "rgba(86,101,115,1)", 
+      borderColor: "rgba(86,101,115,1)", //gray
 		pointBackgroundColor:"rgba(245,84,39,0.8)",//red
       data: yAxis
     }]
   },
   options: {
     legend: {display: false},
-
   }
 });
 }
 
 /*******************************
 * Makes both xAxis and yAxis empty
-* Visualize the empty array
+* Visualize the empty chart
 *******************************/
 function refresh(){
 	xAxis.length=0;
