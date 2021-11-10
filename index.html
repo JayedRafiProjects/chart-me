@@ -56,13 +56,13 @@
 	<div class="container">
 	<div class="inner" id="software">
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'line')">Line</button>
-  <button class="tablinks" onclick="openCity(event, 'bar')">Bar</button>
-  <button class="tablinks" onclick="openCity(event, 'doughnut')">Doughnut</button>
-  <button class="tablinks" onclick="openCity(event, 'pie')">Pie</button>
-  <button class="tablinks" onclick="openCity(event, 'polar')">Polar area</button>
-  <button class="tablinks" onclick="openCity(event, 'scatter')">Scatter</button>
-  <button class="tablinks" onclick="openCity(event, 'dvs')">DVS (Java)</button>
+  <button class="tablinks" onclick="tab(event, 'line')">Line</button>
+  <button class="tablinks" onclick="tab(event, 'bar')">Bar</button>
+  <button class="tablinks" onclick="tab(event, 'doughnut')">Doughnut</button>
+  <button class="tablinks" onclick="tab(event, 'pie')">Pie</button>
+  <button class="tablinks" onclick="tab(event, 'polar')">Polar area</button>
+  <button class="tablinks" onclick="tab(event, 'scatter')">Scatter</button>
+  <button class="tablinks" onclick="tab(event, 'dvs')">DVS (Java)</button>
 </div>
 		
 <div id="line" class="tabcontent">
@@ -76,10 +76,10 @@
   		<input type="submit" value="Submit" >
   		</form>
 		<p>Instructions</p>
-		<p align="left">View chart: Makes the graph based on inserted points.</p>
-		<p align="left">Refresh index: Clears your values.</p>
-		<p align="left">Input points one by one and input both x-axis [ordered] and y-axis together.</p>
-		<p align="left">In x-axis you can use custom name and in y-axis use values.</p>
+		<p align="left">View chart: Makes the graph based on inserted data.</p>
+		<p align="left">Refresh index: Clears your screen.</p>
+		<p align="left">Input data one by one and input both x [ordered] and y at once.</p>
+		<p align="left">If you want to use for maths, use ordered x.</p>
 	</div>
 	<div class="column_2" align="center">
 		<canvas id="line-chart" style="height:100%; width: 100%"></canvas>
@@ -99,8 +99,8 @@
   		</form>
 		<p>Instructions</p>
 		<p align="left">View chart: Makes the graph based on inserted data.</p>
-		<p align="left">Refresh index: Clears your data.</p>
-		<p align="left">Input points one by one and input both name and value together.</p>
+		<p align="left">Refresh index: Clears your screen.</p>
+		<p align="left">Input data one by one and input both name and value at once.</p>
 	</div>
 	<div class="column_2" align="center">
 		<canvas id="bar-chart" style="height:100%; width: 100%"></canvas>
@@ -118,9 +118,9 @@
   		<input type="submit" value="Submit" >
   		</form>
 		<p>Instructions</p>
-		<p align="left">View chart: Makes the graph based on inserted points.</p>
-		<p align="left">Refresh index: Clears your points.</p>
-		<p align="left">Input points one by one and input x and y at once.</p>
+		<p align="left">View chart: Makes the graph based on inserted data.</p>
+		<p align="left">Refresh index: Clears your screen.</p>
+		<p align="left">Input data one by one and input both x and y at once.</p>
 	</div>
 	<div class="column_2" align="center">
 		<canvas id="scatter-plot" style="height:100%; width: 100%"></canvas>
@@ -138,9 +138,10 @@
   		<input type="submit" value="Submit" >
   		</form>
 		<p>Instructions</p>
-		<p align="left">View chart: Makes the pie chart based on inserted data.</p>
+		<p align="left">View chart: Makes the chart based on inserted data.</p>
 		<p align="left">Refresh index: Clears your screen.</p>
-		<p align="left">Initially I created 20 random colours. If you need more, go and add!</p>
+		<p align="left">Input data one by one and input both name and value at once.</p>
+		<p align="left">FUN FACT: Every refresh it makes random color!</p>
 	</div>
 	<div class="column_2" align="center">
 		<canvas id="pie-chart" style="height:100%; width: 100%"></canvas>
@@ -158,9 +159,10 @@
   		<input type="submit" value="Submit" >
   		</form>
 		<p>Instructions</p>
-		<p align="left">View chart: Makes the pie chart based on inserted data.</p>
+		<p align="left">View chart: Makes the chart based on inserted data.</p>
 		<p align="left">Refresh index: Clears your screen.</p>
-		<p align="left">Initially I created 20 random colours. If you need more, go and add!</p>
+		<p align="left">Input data one by one and input both name and value at once.</p>
+		<p align="left">FUN FACT: Every refresh it makes random color!</p>
 	</div>
 	<div class="column_2" align="center">
 		<canvas id="doughnut-chart" style="height:100%; width: 100%"></canvas>
@@ -179,9 +181,10 @@
   		<input type="submit" value="Submit" >
   		</form>
 		<p>Instructions</p>
-		<p align="left">View chart: Makes the pie chart based on inserted data.</p>
+		<p align="left">View chart: Makes the chart based on inserted data.</p>
 		<p align="left">Refresh index: Clears your screen.</p>
-		<p align="left">Initially I created 20 random colours. If you need more, go and add!</p>
+		<p align="left">Input data one by one and input both name and value at once.</p>
+		<p align="left">FUN FACT: Every refresh it makes random color!</p>
 	</div>
 	<div class="column_2" align="center">
 		<canvas id="polar-chart" style="height:100%; width: 100%"></canvas>
@@ -204,7 +207,7 @@
 </body>
 
 <script>
-function openCity(evt, cityName) {
+function tab(evt, name) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
@@ -214,7 +217,7 @@ function openCity(evt, cityName) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(name).style.display = "block";
   evt.currentTarget.className += " active";
 }
 </script>
