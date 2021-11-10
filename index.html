@@ -6,6 +6,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 	<script src="system/chartLine.js"></script>
 	<script src="system/chartBar.js"></script>
+	<script src="system/chartScatter.js"></script>
 	<link rel="icon" href="web/images/logo.png">
 	<title>Chart Me</title>	
 </head>
@@ -62,7 +63,7 @@
   <button class="tablinks" onclick="openCity(event, 'Tokyo')">Pie</button>
   <button class="tablinks" onclick="openCity(event, 'Tokyo')">Polar area</button>
   <button class="tablinks" onclick="openCity(event, 'Tokyo')">Bubble</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Scatter</button>
+  <button class="tablinks" onclick="openCity(event, 'scatter')">Scatter</button>
   <button class="tablinks" onclick="openCity(event, 'Tokyo')">Area</button>
   <button class="tablinks" onclick="openCity(event, 'dvs')">DVS (Java)</button>
 </div>
@@ -109,7 +110,27 @@
 	</div>
 	</div>
 </div>
-
+<div id="scatter" class="tabcontent">
+  <div class="row" align="center">
+	<div class="column_1" align="center">
+		<button class="view_chart" onclick="processScatter()">View chart</button>
+		<button class="view_chart" onclick="refreshScatter()">Refresh index</button>
+		<form onsubmit="return inputPointsScatter()">
+  		<input type="text" id="x-axis-scatter" placeholder="x">
+  		<input type="text" id="y-axis-scatter" placeholder="y">
+  		<input type="submit" value="Submit" >
+  		</form>
+		<p>Instructions</p>
+		<p align="left">View chart: Makes the graph based on inserted points.</p>
+		<p align="left">Refresh index: Clears your points.</p>
+		<p align="left">Input points one by one and input x and y at once.</p>
+	</div>
+	<div class="column_2" align="center">
+		<canvas id="scatter-plot" style="height:100%; width: 100%"></canvas>
+	</div>
+	</div>
+</div>
+		
 <div id="Paris" class="tabcontent">
   <h3>mewmew</h3>
 </div>
