@@ -1,5 +1,5 @@
 <h2 align="center">Chart Me</h2>
-<dev align="center">
+<div align="center">
 <img src="web/images/logo.png">
-</dev>
+</div>
 <p>https://jayedrafiprojects.github.io/chart-me/</p>
