@@ -39,7 +39,7 @@ new Chart("scatter-plot",{
   data: {
     datasets: [{
 	  pointRadius: 5,
-		pointBackgroundColor:"rgba(245,84,39,0.7)",//red
+	  pointBackgroundColor:"rgba(245,84,39,0.7)",//red
       data: xy
     }]
   },
