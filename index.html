@@ -7,6 +7,7 @@
 	<script src="system/chartLine.js"></script>
 	<script src="system/chartBar.js"></script>
 	<script src="system/chartScatter.js"></script>
+	<script src="system/chartPie.js"></script>
 	<link rel="icon" href="web/images/logo.png">
 	<title>Chart Me</title>	
 </head>
@@ -33,13 +34,10 @@
 		<ul>
 		<li>Line chart</li>
 		<li>Bar chart</li>
-		<li>Rader chart</li>
 		<li>Doughnut chart</li>
 		<li>Pie chart</li>
 		<li>Polar area chart</li>
-		<li>Bubble chart</li>
 		<li>Scatter plot</li>
-		<li>Area chart</li>
 		</ul>
 		</p>
   	  <h3>Can you develop your own version?</h3>
@@ -58,13 +56,10 @@
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'line')">Line</button>
   <button class="tablinks" onclick="openCity(event, 'bar')">Bar</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Rader</button>
   <button class="tablinks" onclick="openCity(event, 'Tokyo')">Doughnut</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Pie</button>
+  <button class="tablinks" onclick="openCity(event, 'pie')">Pie</button>
   <button class="tablinks" onclick="openCity(event, 'Tokyo')">Polar area</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Bubble</button>
   <button class="tablinks" onclick="openCity(event, 'scatter')">Scatter</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Area</button>
   <button class="tablinks" onclick="openCity(event, 'dvs')">DVS (Java)</button>
 </div>
 		
@@ -130,7 +125,27 @@
 	</div>
 	</div>
 </div>
-		
+<div id="pie" class="tabcontent">
+  <div class="row" align="center">
+	<div class="column_1" align="center">
+		<button class="view_chart" onclick="processPie()">View chart</button>
+		<button class="view_chart" onclick="refreshPie()">Refresh index</button>
+		<form onsubmit="return inputPointsPie()">
+  		<input type="text" id="x-axis-pie" placeholder="name">
+  		<input type="text" id="y-axis-pie" placeholder="val">
+  		<input type="submit" value="Submit" >
+  		</form>
+		<p>Instructions</p>
+		<p align="left">View chart: Makes the pie chart based on inserted data.</p>
+		<p align="left">Refresh index: Clears your screen.</p>
+		<p align="left">Initially I created 20 random colours. If you need more, go and add!</p>
+	</div>
+	<div class="column_2" align="center">
+		<canvas id="pie-chart" style="height:100%; width: 100%"></canvas>
+	</div>
+	</div>
+</div>
+
 <div id="Paris" class="tabcontent">
   <h3>mewmew</h3>
 </div>
