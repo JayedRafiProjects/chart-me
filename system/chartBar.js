@@ -1,6 +1,6 @@
 /*******************************
+ * 
  * Project: Chart Me
- *
  * Purpose: Bar chart
  * Language: JavaScript
  * Date: November 2021
