@@ -58,9 +58,6 @@ new Chart("pie-chart",{
 		hoverOffset: 5,
       data: yAxisPie
     }]
-  },
-  options: {
-	  
   }
 });
 }
