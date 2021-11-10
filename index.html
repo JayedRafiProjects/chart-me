@@ -5,6 +5,7 @@
 	<link rel="stylesheet" href="web/main.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 	<script src="system/chartLine.js"></script>
+	<script src="system/chartBar.js"></script>
 	<link rel="icon" href="web/images/logo.png">
 	<title>Chart Me</title>	
 </head>
@@ -55,7 +56,7 @@
 	<div class="inner">
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'line')">Line</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Bar</button>
+  <button class="tablinks" onclick="openCity(event, 'bar')">Bar</button>
   <button class="tablinks" onclick="openCity(event, 'Tokyo')">Rader</button>
   <button class="tablinks" onclick="openCity(event, 'Tokyo')">Doughnut</button>
   <button class="tablinks" onclick="openCity(event, 'Tokyo')">Pie</button>
@@ -69,11 +70,11 @@
 <div id="line" class="tabcontent">
 	<div class="row" align="center">
 	<div class="column_1" align="center">
-		<button class="view_chart" onclick="process()">View chart</button>
-		<button class="view_chart" onclick="refresh()">Refresh index</button>
-		<form onsubmit="return inputPoints()">
-  		<input type="text" id="x-axis" placeholder="x">
-  		<input type="text" id="y-axis" placeholder="y">
+		<button class="view_chart" onclick="processLine()">View chart</button>
+		<button class="view_chart" onclick="refreshLine()">Refresh index</button>
+		<form onsubmit="return inputPointsLine()">
+  		<input type="text" id="x-axis-line" placeholder="x">
+  		<input type="text" id="y-axis-line" placeholder="y">
   		<input type="submit" value="Submit" >
   		</form>
 		<p>Instructions</p>
@@ -88,10 +89,30 @@
 	</div>
 </div>
 		
+<div id="bar" class="tabcontent">
+  <div class="row" align="center">
+	<div class="column_1" align="center">
+		<button class="view_chart" onclick="processBar()">View chart</button>
+		<button class="view_chart" onclick="refreshBar()">Refresh index</button>
+		<form onsubmit="return inputPointsBar()">
+  		<input type="text" id="x-axis-bar" placeholder="name">
+  		<input type="text" id="y-axis-bar" placeholder="val">
+  		<input type="submit" value="Submit" >
+  		</form>
+		<p>Instructions</p>
+		<p align="left">View chart: Makes the graph based on inserted data.</p>
+		<p align="left">Refresh index: Clears your data.</p>
+		<p align="left">Input points one by one and input both name and value together.</p>
+	</div>
+	<div class="column_2" align="center">
+		<canvas id="bar-chart" style="height:100%; width: 100%"></canvas>
+	</div>
+	</div>
+</div>
+
 <div id="Paris" class="tabcontent">
   <h3>mewmew</h3>
 </div>
-		
 <div id="dvs" class="tabcontent">
  <h3 align="center">Data Visualization Software</h3>
  <p>This is a different visualization tool </p>
