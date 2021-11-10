@@ -1,6 +1,6 @@
 /*******************************
+ * 
  * Project: Chart Me
- *
  * Purpose: Scatter plot
  * Language: JavaScript
  * Date: November 2021
