@@ -38,7 +38,7 @@ new Chart("line-chart",{
       fill: false,
       lineTension: 0,
       borderColor: "rgba(86,101,115,1)", //gray
-		pointBackgroundColor:"rgba(245,84,39,0.8)",//red
+      pointBackgroundColor:"rgba(245,84,39,0.7)",//red
       data: yAxisLine
     }]
   },
