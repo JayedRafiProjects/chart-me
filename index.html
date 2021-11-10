@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="main.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+	<script src="line.js"></script>
+	<link rel="icon" href="images/logo.png">
+	<title>Chart Me</title>	
+</head>
+
+<body>
+	<div class="container">
+	<img src="images/logo.png" alt="logo" style="height:100px;">
+	<div class="moto">Software focused on data visualization</div>
+	<div class="menu">
+	<a href="#about">About</a>
+	<a href="#software">Software</a>
+	<a href="#code">Code</a>
+	</div>
+	</div>
+	<div class="container">
+	<div class="inner" id="about">
+		<h3>CHART Me ?</h3>
+		<p>Have you ever asked yourself why data is important?  Data is everything. It helps you to make better decisions and allows your business to have a baseline and move forward. Data evaluation is an important part of decision-making. And visual representation can help us to get a better idea. Chart Me is a visualization tool that helps to represent data using different visualization tools to help the human mind comprehend the information easily.</p>
+		
+		<h3>What are your options?</h3>
+		<p>Initially, the following options are available. But don't be dependent. If you are a Developer, feel free to use the
+		source code and develop your version (Please do not use it for any commercial purpose without permission!).</p>
+		<p>
+		<ul>
+		<li>Line chart</li>
+		<li>Bar chart</li>
+		<li>Rader chart</li>
+		<li>Doughnut chart</li>
+		<li>Pie chart</li>
+		<li>Polar area chart</li>
+		<li>Bubble chart</li>
+		<li>Scatter plot</li>
+		<li>Area chart</li>
+		</ul>
+		</p>
+  	  <h3>Can you develop your own version?</h3>
+		<p>Of course! It's free for all educational purposes. But please ask before using it for any commercial purpose! You will find the developer information on the linked GitHub account. or use this:</p>
+		<p><em>&nbsp; &nbsp; &nbsp;Developer: Jayed Rafi<br>
+	    &nbsp; &nbsp; &nbsp;Email: jayedrafi@outlook.com</em></p>
+		<h3>What are the languages being used for this software?</h3>
+		<p>
+		Back-end: JavaScript &amp; Java (Individual software)<br/>
+		Front-end: HTML5 &amp; CSS
+		</p>
+    </div>
+	</div>
+	<div class="container">
+	<div class="inner">
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'line')">Line</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Bar</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Rader</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Doughnut</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Pie</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Polar area</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Bubble</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Scatter</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Area</button>
+</div>
+		
+<div id="line" class="tabcontent">
+	<div class="row" align="center">
+	<div class="column_1" align="center">
+		<button class="view_chart" onclick="process()">View chart</button>
+		<button class="view_chart" onclick="refresh()">Refresh index</button>
+		<form onsubmit="return inputPoints()">
+  		<input type="text" id="x-axis" placeholder="x">
+  		<input type="text" id="y-axis" placeholder="y">
+  		<input type="submit" value="Submit" >
+  		</form>
+		<p>Instructions</p>
+		<p align="left">View chart: Makes the graph based on inserted points.</p>
+		<p align="left">Refresh index: Clears your values.</p>
+		<p align="left">Input points one by one and input both x-axis [ordered] and y-axis together.</p>
+		<p align="left">In x-axis you can use custom name and in y-axis use values.</p>
+	</div>
+	<div class="column_2" align="center">
+		<canvas id="line-chart" style="height:100%;"></canvas>
+	</div>
+	</div>
+</div>
+		
+<div id="Paris" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+		
+<div id="Tokyo" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+	</div></div>
+	<div class="footer" id="code">
+	<p><a href="https://github.com/JayedRafiProjects/chart-me"><img src="images/GitHub-Mark-Light-32px.png" alt="github"><br/>GitHub repository</a></p>
+	</div>
+</body>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+</html>

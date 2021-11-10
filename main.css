@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+.container{
+	text-align: center;
+	padding: 0rem 0 1rem 0;
+}
+.inner{
+	text-align: left;
+	padding: 0.5rem 8rem;
+	background-color: #EBF5FB;
+	color: #1B4F72;
+	font-family: "Consolas", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "Monaco", "Courier New", "monospace";
+	font-size: 16px;
+}
+
+.menu{
+	background-color: #5DADE2;
+	overflow: hidden;
+	font-family: "Consolas", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "Monaco", "Courier New", "monospace";
+}
+
+.footer{
+	background-color: #5DADE2;
+	font-family: "Consolas", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "Monaco", "Courier New", "monospace";
+	padding: 0.5rem;
+	text-align: center;
+}
+.footer a{
+	color: white;
+	text-decoration: none;
+}
+
+.menu a {
+  float: left;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.menu a:hover {
+  background-color: #fff;
+  color: #5DADE2;
+}
+
+.moto{
+	text-align: center;
+	padding: 0rem 1rem 1rem 1rem;
+	font-size: 16px;
+	font-family: "Consolas", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "Monaco", "Courier New", "monospace";
+	color: #566573;
+}
+
+.tab {
+  overflow: hidden;
+  background-color: #5DADE2;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 18px;
+  color: white;
+}
+
+.tab button:hover {
+  background-color: #FFFFFF;
+	color:#5DADE2;
+}
+
+.tab button.active {
+  background-color: white;
+  color: #5DADE2;
+}
+
+.tabcontent {
+  display: none;
+  padding: 10px 10px;
+  border-top: none;
+}
+
+input[type=submit] {
+  width:50%;
+  background-color: white;
+  color: #5DADE2;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin: 20px;
+}
+
+input[type=submit]:hover {
+  background-color: #5DADE2;
+  color: #FFFFFF;
+}
+
+input[type=text] {
+  width: 30%;	
+  padding: 10px;
+  border: none;
+  text-align: center;
+}
+
+.column_1 {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  height: 550px;
+  background-color: #85C1E9;
+}
+
+.column_2{
+  float: left;
+  width: 75%;
+  padding: 10px;
+  height: 550px;
+  background-color: white;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.view_chart{
+  width: 100%;
+  background-color: white;
+  color: #5DADE2;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.view_chart:hover {
+  background-color: #5DADE2;
+  color: #FFFFFF;
+}
