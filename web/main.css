@@ -144,3 +144,12 @@ input[type=text] {
   background-color: #5DADE2;
   color: #FFFFFF;
 }
+
+.link{
+	text-decoration: none;
+	color: #1B4F72;
+}
+
+.link:hover{
+	color: #5DADE2;
+}
