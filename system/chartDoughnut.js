@@ -55,7 +55,7 @@ new Chart("doughnut-chart",{
     labels: xAxisDough,
     datasets: [{
       backgroundColor: doughColor,
-		hoverOffset: 5,
+      hoverOffset: 5,
       data: yAxisDough
     }]
   }
