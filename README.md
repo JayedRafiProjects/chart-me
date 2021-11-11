@@ -13,5 +13,5 @@
 <p align="center"><img src="https://github.com/JayedRafiProjects/chart-me/blob/main/web/images/avg_day.png">
   <br/>FUGURE 3: An average schedule (using doughnut chart)</p>
 <h4>Pie chart</h4>
-<p align="center"><img src="">
-  <br/>FUGURE 3: An average schedule (using doughnut chart)</p>
+<p align="center"><img src="https://github.com/JayedRafiProjects/chart-me/blob/main/web/images/grade_distribution.png">
+  <br/>FUGURE 3: Grade distribution of a course (using pie chart)</p>
