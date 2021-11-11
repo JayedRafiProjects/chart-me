@@ -55,7 +55,7 @@ new Chart("pie-chart",{
     labels: xAxisPie,
     datasets: [{
       backgroundColor: pieColor,
-		hoverOffset: 5,
+      hoverOffset: 5,
       data: yAxisPie
     }]
   }
