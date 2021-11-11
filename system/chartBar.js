@@ -36,7 +36,7 @@ new Chart("bar-chart",{
     labels: xAxisBar,
     datasets: [{
 	  backgroundColor: "rgba(129, 247, 159, 0.7)",
-      borderColor: "rgba(129, 247, 159, 1)", //gray
+          borderColor: "rgba(129, 247, 159, 1)", //gray
 	  borderWidth: 1,
       data: yAxisBar
     }]
