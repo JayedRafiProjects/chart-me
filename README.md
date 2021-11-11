@@ -18,3 +18,6 @@
 <h4>Polar area chart</h4>
 <p align="center"><img src="https://github.com/JayedRafiProjects/chart-me/blob/main/web/images/avg_hi_tem_can_city.png">
   <br/>FIGURE 5: Average highest temperature in some Canadian cities (using polar area chart)</p>
+<h4>Scatter plot</h4>
+<p align="center"><img src="https://github.com/JayedRafiProjects/chart-me/blob/main/web/images/temp_x_icecream_sale.png">
+  <br/>FIGURE 6: Temperature (c) vs ice cream sale (using scatter plot)</p>
