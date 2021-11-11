@@ -4,4 +4,5 @@
   <p>Find all necessary information on the <a href="https://jayedrafiprojects.github.io/chart-me/">web-page</a>.</p>
 </div>
 <h4>Line chart</h4>
-<img src="https://github.com/JayedRafiProjects/chart-me/blob/main/web/images/new_covid_1week_mb.png">
+<p align="center"><img src="https://github.com/JayedRafiProjects/chart-me/blob/main/web/images/new_covid_1week_mb.png">
+  <br/>FIGURE 1: New COVID-19 cases in one week in Manitoba (using line chart)</p>
