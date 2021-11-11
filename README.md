@@ -9,3 +9,9 @@
 <h4>Bar chart</h4>
 <p align="center"><img src="https://github.com/JayedRafiProjects/chart-me/blob/main/web/images/os_market_share.png">
   <br/>FIGURE 2: Operating system market shares (using bar chart)</p>
+<h4>Doughnut chart</h4>
+<p align="center"><img src="https://github.com/JayedRafiProjects/chart-me/blob/main/web/images/avg_day.png">
+  <br/>FUGURE 3: An average schedule (using doughnut chart)</p>
+<h4>Pie chart</h4>
+<p align="center"><img src="">
+  <br/>FUGURE 3: An average schedule (using doughnut chart)</p>
