@@ -14,7 +14,7 @@ var xAxisPie = []; //initially empty data set
 var yAxisPie = []; //initially empty value
 //initially I set 20 colours. You add more if your data-set>20
 var pieColor = ["#dcae18","#fa7703","#b4c89a","#48218b","#f2dea5","#7cb0b2","#26a74c","#2fb8da","#f761fe","#a18bc0",
-			 "#90f483","#ecfec8","#1e31ea","#e397a5","#3361fd","#7a5136","#15b2d0","#15b2d0","#78d435","#348c80"];
+		"#90f483","#ecfec8","#1e31ea","#e397a5","#3361fd","#7a5136","#15b2d0","#15b2d0","#78d435","#348c80"];
 
 /*******************************
 * randomize array using Durstenfeld shuffle algorithm
