@@ -55,7 +55,7 @@ new Chart("polar-chart",{
     labels: xAxisP,
     datasets: [{
       backgroundColor: pColor,
-		hoverOffset: 5,
+      hoverOffset: 5,
       data: yAxisP
     }]
   }
