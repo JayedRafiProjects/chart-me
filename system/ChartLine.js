@@ -5,7 +5,7 @@
  * Language: JavaScript
  * Date: November 2021
  * 
- * Dev: Jayed Rafi
+ * Dev: Jayed Rafi 
  *
 *******************************/
 
