@@ -2,6 +2,13 @@
 <div align="center">
   <a href="https://jayedrafiprojects.github.io/chart-me/"><img src="web/images/logo.png"></a>
   <p>Find all necessary information on the <a href="https://jayedrafiprojects.github.io/chart-me/">web-page</a>.</p>
+  <p>Some more info:<br/>
+    Sometimes a little help can make things even better. Maybe while Solving a math function or making a presentation for your work,
+    you can use this project everywhere you need. And I believe the best way to understand data is by making a drawing or something that can visually represent the information. 
+    If I'm comparing two or three objects, in this case, it is easy. But think about more data, technology can save your time and make that work easy for you.
+    Some graphs in this application are not only for numbers, so play with it a little bit. You will catch the idea. I just added the basic and important functionality.
+    If you need to add more (Maybe capture the graph and download it ... etc) you are permitted to do. But don't use it for any commercial reason without permission. 
+    And thank you for using it.</p>
 </div>
 <h4>Line chart</h4>
 <p align="center"><img src="https://github.com/JayedRafiProjects/chart-me/blob/main/web/images/new_covid_1week_mb.png">
