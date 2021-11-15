@@ -2,7 +2,7 @@
 <div align="center">
   <a href="https://jayedrafiprojects.github.io/chart-me/"><img src="web/images/logo.png"></a>
   <p>Find all necessary information on the <a href="https://jayedrafiprojects.github.io/chart-me/">web-page</a>.</p>
-  <p>Some more info:<br/>
+  <p align="justify">Some more info:<br/>
     Sometimes a little help can make things even better. Maybe while Solving a math function or making a presentation for your work,
     you can use this project everywhere you need. And I believe the best way to understand data is by making a drawing or something that can visually represent the information. 
     If I'm comparing two or three objects, in this case, it is easy. But think about more data, technology can save your time and make that work easy for you.
