@@ -11,7 +11,7 @@
     And thank you for using it.</p>
 </div>
 <h4>Line chart</h4>
-<p align="center"><img src="https://github.com/JayedRafiProjects/chart-me/blob/main/web/images/new_covid_1week_mb.png">
+<p align="center"><img src="https://github.com/JayedRafiProjects/chart-me/blob/main/web/images/new_covid_1week_mb.png" width="60%">
   <br/>FIGURE 1: New COVID-19 cases in one week in Manitoba (using line chart)</p>
 <h4>Bar chart</h4>
 <p align="center"><img src="https://github.com/JayedRafiProjects/chart-me/blob/main/web/images/os_market_share.png">
