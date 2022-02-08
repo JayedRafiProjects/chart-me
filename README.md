@@ -14,17 +14,17 @@
 <p align="center"><img src="https://github.com/JayedRafiProjects/chart-me/blob/main/web/images/new_covid_1week_mb.png" width="60%">
   <br/>FIGURE 1: New COVID-19 cases in one week in Manitoba (using line chart)</p>
 <h4>Bar chart</h4>
-<p align="center"><img src="https://github.com/JayedRafiProjects/chart-me/blob/main/web/images/os_market_share.png">
+<p align="center"><img src="https://github.com/JayedRafiProjects/chart-me/blob/main/web/images/os_market_share.png"  width="60%">
   <br/>FIGURE 2: Operating system market shares (using bar chart)</p>
 <h4>Doughnut chart</h4>
-<p align="center"><img src="https://github.com/JayedRafiProjects/chart-me/blob/main/web/images/avg_day.png">
+<p align="center"><img src="https://github.com/JayedRafiProjects/chart-me/blob/main/web/images/avg_day.png"  width="60%">
   <br/>FUGURE 3: An average schedule (using doughnut chart)</p>
 <h4>Pie chart</h4>
-<p align="center"><img src="https://github.com/JayedRafiProjects/chart-me/blob/main/web/images/grade_distribution.png">
+<p align="center"><img src="https://github.com/JayedRafiProjects/chart-me/blob/main/web/images/grade_distribution.png"  width="60%">
   <br/>FUGURE 4: Grade distribution of a course (using pie chart)</p>
 <h4>Polar area chart</h4>
-<p align="center"><img src="https://github.com/JayedRafiProjects/chart-me/blob/main/web/images/avg_hi_tem_can_city.png">
+<p align="center"><img src="https://github.com/JayedRafiProjects/chart-me/blob/main/web/images/avg_hi_tem_can_city.png"  width="60%">
   <br/>FIGURE 5: Average highest temperature in some Canadian cities (using polar area chart)</p>
 <h4>Scatter plot</h4>
-<p align="center"><img src="https://github.com/JayedRafiProjects/chart-me/blob/main/web/images/temp_x_icecream_sale.png">
+<p align="center"><img src="https://github.com/JayedRafiProjects/chart-me/blob/main/web/images/temp_x_icecream_sale.png"  width="60%">
   <br/>FIGURE 6: Temperature (c) vs ice cream sale (using scatter plot)</p>
