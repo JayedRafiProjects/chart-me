@@ -57,7 +57,7 @@
 	<div class="container">
 	<div class="inner" id="software">
 <div class="tab">
-  <button class="tablinks" onclick="tab(event, 'line')">Line</button>
+  <button class="tablinks" onclick="tab(event, 'line')" id="defaultOpen">Line</button>
   <button class="tablinks" onclick="tab(event, 'bar')">Bar</button>
   <button class="tablinks" onclick="tab(event, 'doughnut')">Doughnut</button>
   <button class="tablinks" onclick="tab(event, 'pie')">Pie</button>
@@ -206,4 +206,7 @@
 	<p><a href="https://github.com/JayedRafiProjects/chart-me"><img src="web/images/GitHub-Mark-Light-32px.png" alt="github"><br/>GitHub repository</a></p>
 	</div>
 </body>
+<script>
+document.getElementById("defaultOpen").click();
+</script>
 </html>
