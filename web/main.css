@@ -30,6 +30,15 @@
 	text-decoration: none;
 }
 
+a{
+	text-decoration: none;
+	color: #5DADE2;
+}
+
+a:hover{
+	color: #1B4F72;
+}
+
 .menu a {
   float: left;
   color: #fff;
